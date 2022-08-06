@@ -5,9 +5,7 @@ using namespace atcoder;
 
 int main()
 {
-    int answer = 0;
 
-    cout << answer << endl;
 
     return 0;
 }
