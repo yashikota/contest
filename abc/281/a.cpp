@@ -5,11 +5,13 @@ using namespace std;
 
 int main()
 {
-    string str;
+    int n;
+    cin >> n;
 
-    cin >> str;
-
-    cout << str << endl;
+    while (n != -1)
+    {
+        cout << n-- << endl;
+    }
 
     return 0;
 }
