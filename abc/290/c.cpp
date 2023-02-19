@@ -12,31 +12,21 @@ int main()
     int n, k;
     cin >> n >> k;
 
-    int max_mex = 0;
-
     vector<int> a(n);
     rep (i, n) {
         cin >> a.at(i);
     }
 
     set<int> s(a.begin(), a.end());
-    vector<int> a2(s.begin(), s.end());
 
-    for (int i = 0; i < (int)a2.size() -2; i++)
+    int ans = 0;
+    while (s.count(ans) != 0)
     {
-        set<int> s2;
-        rep(i, k) {
-            s2.insert(a2.at(i));
-        }
-
-        int ans = 0;
-        while(s2.count(ans) != 0) {
-            ans++;
-        }
-        if (max_mex < ans) max_mex = ans;
+        ans++;
     }
+    if (ans > k) ans = k;
 
-    cout << max_mex << endl;
+    cout << ans << endl;
 
     return 0;
 }
