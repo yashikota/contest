@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
 
-int main()
-{
+int main() {
     string s;
     int len;
 

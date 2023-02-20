@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
 
-int main()
-{
+int main() {
     int n;
     int in = 0, out = 0, put = 0;
 
@@ -12,13 +11,11 @@ int main()
 
     vector<int> sequence(n);
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> sequence.at(i);
     }
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         in = sequence.at(i);
         put = in - out;
         out += put;

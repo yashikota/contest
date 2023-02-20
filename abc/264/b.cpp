@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
 
-int main()
-{
+int main() {
     int r, c;
     int diff;
 
@@ -12,12 +11,9 @@ int main()
 
     diff = 15 - min(r, c);
 
-    if (diff % 2)
-    {
+    if (diff % 2) {
         cout << "white";
-    }
-    else
-    {
+    } else {
         cout << "black";
     }
 

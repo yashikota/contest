@@ -1,17 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
 
-int main()
-{
+int main() {
     string str = "atcoder";
     int start, end;
 
     cin >> start >> end;
 
-    for (int i = start - 1; i <= end - 1; i++)
-    {
+    for (int i = start - 1; i <= end - 1; i++) {
         cout << str[i];
     }
 

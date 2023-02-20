@@ -7,8 +7,7 @@ using namespace std;
 
 void result(int letter, int either);
 
-int main()
-{
+int main() {
     int n, d, k;
     int t;
     cin >> t;
@@ -16,38 +15,38 @@ int main()
     rep(i, t) {
         cin >> n >> d >> k;
         rep(j, k) {
-            if (k == 1) cout << 0 << endl;
-            else cout << (0 + d) % n << endl;
+            if (k == 1)
+                cout << 0 << endl;
+            else
+                cout << (0 + d) % n << endl;
         }
     }
 
     return 0;
 }
 
-void result(int letter, int either)
-{
+void result(int letter, int either) {
     string output;
 
-    switch (letter)
-    {
-    case 1:
-        if (either)
-            output = "YES";
-        else
-            output = "NO";
-        break;
-    case 2:
-        if (either)
-            output = "Yes";
-        else
-            output = "No";
-        break;
-    case 3:
-        if (either)
-            output = "yes";
-        else
-            output = "no";
-        break;
+    switch (letter) {
+        case 1:
+            if (either)
+                output = "YES";
+            else
+                output = "NO";
+            break;
+        case 2:
+            if (either)
+                output = "Yes";
+            else
+                output = "No";
+            break;
+        case 3:
+            if (either)
+                output = "yes";
+            else
+                output = "no";
+            break;
     }
 
     cout << output << endl;

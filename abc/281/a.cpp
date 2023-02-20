@@ -3,13 +3,11 @@ using namespace std;
 // #include <atcoder/all>
 // using namespace atcoder;
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
 
-    while (n != -1)
-    {
+    while (n != -1) {
         cout << n-- << endl;
     }
 

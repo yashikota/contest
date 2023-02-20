@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
 
-int main()
-{
+int main() {
     int h, w;
     string input;
 
@@ -12,18 +11,15 @@ int main()
 
     vector<string> grid(h);
 
-    for (int i = 0; i < h; i++)
-    {
+    for (int i = 0; i < h; i++) {
         cin >> grid.at(i);
     }
 
     int count = 0;
 
-    for (int i = 0; i < h; i++)
-    {
-        for (int j = 0; j < w; j++)
-        {
-            if((grid.at(i)[j]) == '#') {
+    for (int i = 0; i < h; i++) {
+        for (int j = 0; j < w; j++) {
+            if ((grid.at(i)[j]) == '#') {
                 count++;
             }
         }
