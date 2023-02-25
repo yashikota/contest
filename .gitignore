@@ -33,3 +33,7 @@
 
 # atcoder library
 ac-library/*
+
+# Makefile
+Makefile
+!/Makefile

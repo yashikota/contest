@@ -17,6 +17,8 @@ fi
 
 mkdir -p abc/$1
 
+cp -n Makefile abc/$1/Makefile
+
 cp -n template.cpp abc/$1/a.cpp
 cp -n template.cpp abc/$1/b.cpp
 cp -n template.cpp abc/$1/c.cpp
