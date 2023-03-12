@@ -25,9 +25,9 @@ int main() {
     coordinate.at(0) = 0;
     rep(i, n) {
         if (s[i] == 'R')
-            coordinate.at(i + 1) = point += 10;
+            coordinate.at(i + 1) = point += 10000;
         else if (s[i] == 'L')
-            coordinate.at(i + 1) = point -= 10;
+            coordinate.at(i + 1) = point -= 10000;
         else if (s[i] == 'U')
             coordinate.at(i + 1) = point += 1;
         else if (s[i] == 'D')
