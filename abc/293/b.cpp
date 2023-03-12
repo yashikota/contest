@@ -1,20 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define YES cout << "YES" << endl;
-#define Yes cout << "Yes" << endl;
-#define yes cout << "yes" << endl;
-#define NO cout << "NO" << endl;
-#define No cout << "No" << endl;
-#define no cout << "no" << endl;
-
 #define rep(i, n) for (int i = 0; i < (n); i++)
 
 int main() {
-    int a;
-    cin >> a;
-    cout << a << endl;
+    int n;
+    cin >> n;
+
+    vector<int> a(n);
+    rep(i, n) { cin >> a.at(i); }
+
+    for (int i = 0; i < n; i++) {
+        if (a.at(i) != -1 && a.at(i) > i) a.at((a.at(i)) - 1) = -1;
+    }
+
+    set<int> a2(a.begin(), a.end());
+
+    vector<int> x;
+    for (int i = 1; i <= n; i++) {
+        if (!a2.count(i)) x.push_back(i);
+    }
+
+    sort(x.begin(), x.end());
+
+    cout << x.size() << endl;
+    rep(i, x.size()) { cout << x.at(i) << " "; }
 
     return 0;
 }
-

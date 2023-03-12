@@ -1,20 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define YES cout << "YES" << endl;
-#define Yes cout << "Yes" << endl;
-#define yes cout << "yes" << endl;
-#define NO cout << "NO" << endl;
-#define No cout << "No" << endl;
-#define no cout << "no" << endl;
-
 #define rep(i, n) for (int i = 0; i < (n); i++)
 
 int main() {
-    int a;
-    cin >> a;
-    cout << a << endl;
+    string s;
+    cin >> s;
+
+    for (int i = 1; i <= s.size() / 2; i++) {
+        swap(s[(2 * i - 1)-1], s[(2 * i)-1]);
+    }
+
+    cout << s << endl;
 
     return 0;
 }
-
