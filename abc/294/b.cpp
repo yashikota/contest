@@ -18,8 +18,7 @@ int main() {
             if (a.at(i).at(j) == 0)
                 cout << ".";
             else {
-                char ch = 'A' + a.at(i).at(j) - 1;
-                cout << ch;
+                cout << (char)('A' + a.at(i).at(j) - 1);
             }
         }
         cout << endl;
