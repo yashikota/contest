@@ -4,10 +4,13 @@ using namespace std;
 #define rep(i, n) for (int i = 0; i < (n); i++)
 
 int main() {
-    int a;
-    cin >> a;
-    cout << a << endl;
+    int n;
+    cin >> n;
+
+    vector<int> a(n);
+    rep(i, n) cin >> a.at(i);
+
+    rep(i, n) cout << a.at(i) * 10 << endl;
 
     return 0;
 }
-
