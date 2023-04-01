@@ -10,7 +10,7 @@ int main() {
     vector<int> a(n);
     rep(i, n) cin >> a.at(i);
 
-    rep(i, n) cout << a.at(i) * 10 << endl;
+    rep(i, n) cout << a.at(i) << endl;
 
     return 0;
 }
