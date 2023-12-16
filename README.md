@@ -2,4 +2,4 @@
 
 ## AtCoder
 
-[![Rating](https://badgen.org/img/atcoder/yashikota/rating/algorithm?style=flat)](https://atcoder.jp/users/yashikota?contestType=algo)
+[![yashikota](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fyashikota)](https://atcoder.jp/users/yashikota)
