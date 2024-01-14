@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE -I/opt/boost/gcc/include -L/opt/boost/gcc/lib
+CFLAGS=-std=gnu++20 -Wall -Wextra -O2 -DONLINE_JUDGE -I/opt/boost/gcc/include -L/opt/boost/gcc/lib
 .SUFFIXES = .cpp
 objs:=$(wildcard *.cpp)
 targets:=$(objs:.cpp=.exe)
