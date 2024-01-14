@@ -2,25 +2,33 @@
 
 #define ll long long
 
-std::vector<std::string> s;
-
-void sub(int n) {
-    if (n < 5)
-        s.push_back(std::to_string(n));
-    else {
-        sub(n / 5);
-        s.push_back(std::to_string(n % 5));
-    }
-}
-
 int main() {
     ll n;
-
     std::cin >> n;
-    sub(n);
-    std::string s2(s.begin(), s.end());
 
-    // std::cout << stoi(s2) << std::endl;
+    std::string ntom(const std::string origin, const int n, const int m) {
+        unsigned ll sum = 0;
+        for (int i = 0; i < (ll)origin.size(); i++) {
+            int num = origin[i] - '0';
+            sum = sum * n + num;
+        }
+
+        std::string result = "";
+        while (sum > 0) {
+            int num = sum % m;
+            result = std::to_string(num) + result;
+            sum /= m;
+        }
+
+        if (result == "") {
+            result = "0";
+        }
+
+        return result;
+    }
+
+    std::cout << (std::stoull(ntom(std::to_string(n - 1), 10, 5)) * 2)
+              << std::endl;
 
     return 0;
 }
